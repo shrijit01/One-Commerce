@@ -32,7 +32,7 @@ export const UserProvider = ({ children }) => {
             order: [],
         }
         const useRef = collection(db, "users");
-        const docRef = addDoc(useRef, user);
+        // const docRef = addDoc(useRef, user);
         setCheckUser(true);
     }
 
@@ -109,10 +109,6 @@ export const UserProvider = ({ children }) => {
         }
     }
 
-    // ADD TO CART 
-    // const addToCart = ()=>{
-
-    // }
 
     return (
         <userContext.Provider value={{

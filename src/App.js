@@ -4,13 +4,10 @@ import Home from "./component/Home/Home";
 import SignUp from "./component/SignUp/SignUp";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Order from "./component/order/Order";
-import { useState } from "react";
 import { UserProvider } from "./UserContext";
 import Cart from "./component/Cart/cart";
-// import { Loader } from "./component/loader/loader";
 
 function App() {
-  // const [user , setUser] = useState();
 
   const router = createBrowserRouter([
     { path: "/", element: (<UserProvider><Navbar /><Home /></UserProvider>) },
